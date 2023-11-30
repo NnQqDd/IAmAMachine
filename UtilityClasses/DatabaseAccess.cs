@@ -15,7 +15,7 @@ namespace SQLAppDemo
         SqlConnection con;
         public ProcessDatabase()
         {
-            strcon = "";//Connection string
+            strcon = "Data Source=HieuToTMa;Initial Catalog=aaa;Integrated Security=True";//Connection string
         }
         public void Connect()
         {
@@ -48,7 +48,14 @@ namespace SQLAppDemo
             SqlCommand cm = new SqlCommand();
             cm.CommandText = sql;
             cm.Connection = con;
-            cm.ExecuteNonQuery();
+            try
+            {
+                cm.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
             cm.Dispose();
         }
         public int GetIntResult(string sql)
@@ -77,5 +84,7 @@ namespace SQLAppDemo
 
             }
         }
+
+
     }
 }

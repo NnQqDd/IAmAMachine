@@ -55,12 +55,14 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1082, 641);
+            this.dataGridView1.Size = new System.Drawing.Size(812, 522);
             this.dataGridView1.TabIndex = 1;
             this.dataGridView1.TabStop = false;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // button4
             // 
@@ -69,10 +71,10 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(240, 61);
+            this.button4.Location = new System.Drawing.Point(180, 50);
             this.button4.Margin = new System.Windows.Forms.Padding(0);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(164, 31);
+            this.button4.Size = new System.Drawing.Size(123, 25);
             this.button4.TabIndex = 18;
             this.button4.TabStop = false;
             this.button4.Text = "Hoàn tác";
@@ -83,6 +85,7 @@
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.IsSplitterFixed = true;
             this.splitContainer1.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(2);
             this.splitContainer1.Name = "splitContainer1";
             this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -99,8 +102,9 @@
             this.splitContainer1.Panel2.Controls.Add(this.panel5);
             this.splitContainer1.Panel2.Controls.Add(this.panel4);
             this.splitContainer1.Panel2.Controls.Add(this.dataGridView1);
-            this.splitContainer1.Size = new System.Drawing.Size(1082, 813);
-            this.splitContainer1.SplitterDistance = 168;
+            this.splitContainer1.Size = new System.Drawing.Size(812, 661);
+            this.splitContainer1.SplitterDistance = 136;
+            this.splitContainer1.SplitterWidth = 3;
             this.splitContainer1.TabIndex = 19;
             // 
             // label7
@@ -108,9 +112,10 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Green;
-            this.label7.Location = new System.Drawing.Point(3, 131);
+            this.label7.Location = new System.Drawing.Point(2, 106);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(203, 23);
+            this.label7.Size = new System.Drawing.Size(163, 19);
             this.label7.TabIndex = 29;
             this.label7.Text = "Danh sách hóa đơn nhập";
             // 
@@ -119,9 +124,10 @@
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.Controls.Add(this.tenDangNhapTxt);
             this.panel3.Controls.Add(this.userPictureBox);
-            this.panel3.Location = new System.Drawing.Point(522, 108);
+            this.panel3.Location = new System.Drawing.Point(392, 88);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(550, 46);
+            this.panel3.Size = new System.Drawing.Size(412, 37);
             this.panel3.TabIndex = 16;
             // 
             // tenDangNhapTxt
@@ -129,19 +135,20 @@
             this.tenDangNhapTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tenDangNhapTxt.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tenDangNhapTxt.ForeColor = System.Drawing.Color.Silver;
-            this.tenDangNhapTxt.Location = new System.Drawing.Point(36, 12);
+            this.tenDangNhapTxt.Location = new System.Drawing.Point(27, 10);
+            this.tenDangNhapTxt.Margin = new System.Windows.Forms.Padding(2);
             this.tenDangNhapTxt.Name = "tenDangNhapTxt";
-            this.tenDangNhapTxt.Size = new System.Drawing.Size(500, 23);
+            this.tenDangNhapTxt.Size = new System.Drawing.Size(375, 19);
             this.tenDangNhapTxt.TabIndex = 2;
             this.tenDangNhapTxt.Text = "Nhập từ khóa tìm kiếm";
             // 
             // userPictureBox
             // 
             this.userPictureBox.Image = global::IAmAMachine.Properties.Resources.search_24px;
-            this.userPictureBox.Location = new System.Drawing.Point(6, 11);
+            this.userPictureBox.Location = new System.Drawing.Point(4, 9);
             this.userPictureBox.Margin = new System.Windows.Forms.Padding(0);
             this.userPictureBox.Name = "userPictureBox";
-            this.userPictureBox.Size = new System.Drawing.Size(24, 24);
+            this.userPictureBox.Size = new System.Drawing.Size(21, 20);
             this.userPictureBox.TabIndex = 4;
             this.userPictureBox.TabStop = false;
             // 
@@ -161,7 +168,7 @@
             this.button3.Location = new System.Drawing.Point(0, 0);
             this.button3.Margin = new System.Windows.Forms.Padding(0);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(1082, 40);
+            this.button3.Size = new System.Drawing.Size(812, 32);
             this.button3.TabIndex = 5;
             this.button3.Text = "        Quản lý hóa đơn nhập";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -170,30 +177,33 @@
             // panel6
             // 
             this.panel6.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel6.Location = new System.Drawing.Point(10, 631);
+            this.panel6.Location = new System.Drawing.Point(8, 514);
+            this.panel6.Margin = new System.Windows.Forms.Padding(2);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1062, 10);
+            this.panel6.Size = new System.Drawing.Size(796, 8);
             this.panel6.TabIndex = 4;
             // 
             // panel5
             // 
             this.panel5.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel5.Location = new System.Drawing.Point(1072, 0);
+            this.panel5.Location = new System.Drawing.Point(804, 0);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(10, 641);
+            this.panel5.Size = new System.Drawing.Size(8, 522);
             this.panel5.TabIndex = 3;
             // 
             // panel4
             // 
             this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(10, 641);
+            this.panel4.Size = new System.Drawing.Size(8, 522);
             this.panel4.TabIndex = 2;
             // 
             // QuanLyHoaDonNhapUserControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.Control;
@@ -201,7 +211,7 @@
             this.Location = new System.Drawing.Point(300, 0);
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "QuanLyHoaDonNhapUserControl";
-            this.Size = new System.Drawing.Size(1082, 813);
+            this.Size = new System.Drawing.Size(812, 661);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.PerformLayout();
